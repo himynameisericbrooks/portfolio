@@ -593,6 +593,21 @@ li, ul {
 	-o-transition: all 0.4s ease 0s;
 	transition: all 0.4s ease 0s;
 }
+.source a {
+	color: #000;
+}
+.source a:hover {
+	color: #666;
+	transition-property: color;
+	transition-duration: .7s;
+}
+.source-container {
+	display: flex;
+	justify-content: center;
+	position: relative;
+	bottom: 15px;
+	margin: 0 0 10px 0;
+}
 
 
 
@@ -677,7 +692,7 @@ li, ul {
 /* ====================
   Promotion Section
 =======================*/
-.promotion-section {
+/* .promotion-section {
 	position: relative;
 	padding: 150px 0;
 }
@@ -711,7 +726,7 @@ li, ul {
 }
 .promotion p {
 	color: #fff;
-}
+} */
 
 
 
@@ -783,26 +798,22 @@ li, ul {
 	color: #fff;
 	margin: 0 5px;
 }
-.footer-section .social-links a i {
-	display: table-cell;
-	vertical-align: middle;
+.social-links a:hover {
+	color: rgba(255, 255, 255, .8);
+	transition-duration: .5s;
 }
-.footer-section .social-links a.facebook {
-	background: #2D5DA1;
+.linked-in {
+	font-size: 60px;
+	position: relative;
+	top: 20px;
 }
-.footer-section .social-links a.twitter {
-	background: #1AB1E5;
+.linked-in:hover {
+	color: #000;
 }
-.footer-section .social-links a.behance {
-	background: #2A71F3;
-}
-.footer-section .social-links a.dribbble {
-	background: #DF7EA5;
-}
-.footer-section p {
-	font-size: 14px;
-	margin-bottom: 0;
-	line-height: normal;
+.github {
+	font-size: 60px;
+	position: relative;
+	top: 20px;
 }
 
 
@@ -846,6 +857,12 @@ li, ul {
 @media (max-width: 767px) {
 	.offer-box {
 		width: 85vw;
+	}
+	.wow i {
+		font-size: 40px;
+		position: relative;
+		top: 10px;
+		color: rgba(0, 0, 0, 1);
 	}
 }
 
