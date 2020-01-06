@@ -308,8 +308,8 @@ li, ul {
 	text-align: center;
 }
 .intro-inner .intro-content .profile-img {
-	width: 500px;
-	height: 500px;
+	width: 450px;
+	height: 450px;
 	margin: 0 auto;
 	border-radius: 50%;
 	overflow: hidden;
@@ -831,6 +831,13 @@ li, ul {
 	}
 	.skill {
 		margin-top: 20px;
+	}
+}
+
+@media (max-width: 1100px) {
+	.intro-inner .intro-content .profile-img {
+		width: 400px;
+		height: 400px;
 	}
 }
 
